@@ -20,8 +20,8 @@
     "@jsnote-bpg/local-client": "^1.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.2.1",
     "@jsnote-bpg/local-api": "^1.0.0",
+    "@types/node": "^20.2.1",
     "commander": "^10.0.1",
     "esbuild": "0.8.26",
     "typescript": "^5.0.4"

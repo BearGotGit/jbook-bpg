@@ -1,0 +1,10 @@
+.cell-list {
+    margin: 0 25px 100vh;
+
+}
+
+/* Whenever somebody's dragging this. This is to stop
+very abrupt transitions in height from happening. */
+.react-draggable-transparent-selection .cell-list {
+    margin-bottom: 100vh; 
+}

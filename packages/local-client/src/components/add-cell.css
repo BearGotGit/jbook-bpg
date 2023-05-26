@@ -1,0 +1,36 @@
+.add-cell {
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0.1s;
+    margin: 5px;
+}
+
+.add-cell:hover {
+    opacity: 1.0;
+}
+
+/* You are forced to have NO SPACE between selectors here! */
+.add-cell.force-visible {
+    opacity: 1.0;
+}
+
+/* BUT... You are foreced SPACE between the selectors HERE!*/
+.add-cell .divider {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 2.5%;
+    left: 2.5%;
+    border-bottom: 1px solid gray;
+    width: 95%;
+    z-index: -1;
+}
+
+.add-cell .add-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.add-cell .add-buttons button {
+    margin: 0px 20px;
+}

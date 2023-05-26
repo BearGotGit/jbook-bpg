@@ -1,0 +1,27 @@
+.editor-wrapper {
+    position: relative;
+    /* I guess you need this css function when you are doing
+    something more complicated than just 100% or 10px. If you
+    want some "calc"-ulation of the two, you use calc() */
+    /* We do this because the editor wrapper would take 
+    too much space if we just left it at 100% (the 10px-wide
+    resize-bar would be pushed off the row to the next available
+    spot, which would show up below the editor, not right of it)
+    So the editor-wrapper actually has to be only 100% - 10px. */
+    /* Also, BEWARE, the space between '100%', '-', and '10px' is important! */
+    width: calc(100% - 10px);
+    height: 100%;
+}
+
+.editor-wrapper .button-format {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.editor-wrapper:hover .button-format {
+    opacity: 1.0;
+}
